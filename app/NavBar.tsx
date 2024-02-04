@@ -60,6 +60,7 @@ const NavBar = () => {
                     size='2'
                     radius='full'
                     className='cursor-pointer'
+                    referrerPolicy='no-referrer'
                   />
                 </DropdownMenu.Trigger>
                 <DropdownMenu.Content>
@@ -67,13 +68,13 @@ const NavBar = () => {
                     <Text size='2'>{session.user?.email}</Text>{' '}
                   </DropdownMenu.Label>
                   <DropdownMenu.Item>
-                    <Link href='api/auth/signout'>Logout</Link>
+                    <Link href='/api/auth/signout'>Logout</Link>
                   </DropdownMenu.Item>
                 </DropdownMenu.Content>
               </DropdownMenu.Root>
             )}
             {status === 'unauthenticated' && (
-              <Link href='api/auth/signin'>Login</Link>
+              <Link href='/api/auth/signin'>Login</Link>
             )}
           </Box>
         </Flex>
