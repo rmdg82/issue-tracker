@@ -8,7 +8,7 @@ import {
 } from '@radix-ui/react-icons';
 import { Button, Flex, Text } from '@radix-ui/themes';
 import { useSearchParams } from 'next/navigation';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import React from 'react';
 
 interface Props {
